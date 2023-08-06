@@ -1,0 +1,46 @@
+<!-- <div *ngFor="let employee of employees" class="container">
+    <div class="row">
+        <div class="col-md-6 col-xl-3">
+            <div class="card m-b-30">
+                <div class="card-body row">
+                    <div class="col-6">
+                        <a href=""><img [src]="employee.imageUrl" alt="{{employee.name}}" class="img-fluid rounded-circle w-60"></a>
+                    </div>
+                    <div class="col-6 card-title align-self-center mb-0">
+                        <h5>{{employee.name}}</h5>
+                        <p class="m-0">{{employee.jobTitle}}</p>
+                        <p class="m-0">{{employee.employeeCode}}</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email : <a href="#">{{employee.email}}</a></li>
+                    <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone : {{employee.phone}}</li>
+                </ul>
+                <div class="card-body">
+                    <div class="float-right btn-group btn-group-sm">
+                        <a href="#" class="btn btn-primary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-times"></i></a>
+                    </div>
+                    <ul class="social-links list-inline mb-0">
+                        <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div *ngFor="let employee of employees" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
+  <div style="display: flex; align-items: center;">
+    <img [src]="employee.imageUrl" alt="{{employee.name}}" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+    <div>
+      <h3>{{employee.name}}</h3>
+      <p><strong>Email :</strong> {{employee.email}}</p>
+      <p><strong>Phone :</strong> {{employee.phone}}</p>
+      <p><strong>Job Title :</strong> {{employee.jobTitle}}</p>
+      <p><strong>Employee Code :</strong> {{employee.employeeCode}}</p>
+    </div>
+  </div>
+</div>
